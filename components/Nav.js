@@ -170,11 +170,7 @@ function Nav() {
         <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
           <div className="flex items-center justify-between text-blue-gray-900">
             <Card className="mr-4 cursor-pointer font-extrabold py-1.5 lg:ml-2">
-              <img
-                src="/ridhi.png"
-                alt="logo"
-                className="cursor-pointer w-40 h-7 object-cover"
-              />
+              <div className="text-2xl font-semibold text-blue-500">Ridhi Suman Fabrics</div>
             </Card>
             <div className="flex items-center gap-4">
               <div className="mr-4 hidden lg:block">{navList}</div>
