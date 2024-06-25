@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  
+}
+.productPageColorButton{
+    border: 1px solid rgba(192, 192, 192, 0.786);
+    border-radius: 4px;
+    padding: 6px 8px 6px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+}
+.productPageSizeButton{
+    border: 1px solid rgba(192, 192, 192, 0.786);
+    border-radius: 4px;
+    padding: 6px 8px 6px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    width: 52.4px;
+    text-align: center;
+}
+.productPageColorButton:hover{
+  cursor: pointer;
+  border-color: blue;
+}
+.productPageSizeButton:hover{
+     cursor: pointer;
+     border-color: blue;
+  }
+
+.Buy-CartButton{
+   width: 394.5px;
+   height: 50px;
+   border-radius: 8px;
+   padding: 10px;   
+}
+.selected{
+  border-color: blue;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.dropDownProfile{
+  position: absolute;
+  top: 5.5rem;
+  right: 4rem;
+  width: 141px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.dropDownProfile ul li{
+  color: black;
+}
+.dropDownProfile::before{
+  content: '';
+  position: absolute;
+  top: -0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-left: 1px solid gray;
+  border-top:1px solid gray;
+  background-color: white;
+
+}
