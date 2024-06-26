@@ -1,4 +1,7 @@
 import React from "react";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+
 import {
   CarouselProvider,
   Slider,
@@ -20,7 +23,6 @@ function testimonial() {
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
           isPlaying={true}
-           
           totalSlides={3}
         >
           <h1 className="text-4xl font-bold xl:block hidden dlex  leading-tight text-gray-800">
@@ -163,10 +165,7 @@ function testimonial() {
               role="button"
               aria-label="previous slide"
             >
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg"
-                alt="previous"
-              />
+              <FaArrowLeft size={25} />
             </ButtonBack>
 
             <ButtonNext
@@ -174,10 +173,7 @@ function testimonial() {
               aria-label="next slide"
               className="cursor-pointer ml-2"
             >
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg"
-                alt="next"
-              />
+              <FaArrowRight size={25}  />
             </ButtonNext>
           </div>
         </CarouselProvider>

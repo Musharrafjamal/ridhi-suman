@@ -29,7 +29,7 @@ function CategoryCarousel() {
                 <img
                   src="/category/download (1).jpg"
                   alt="Lehenga Choli"
-                  className="rounded-full  lg:w-96 object-cover  md:w-80 md:h-80 sm:h-48 lg:h-96  h-28"
+                  className="rounded-full  lg:w-96 w-full md:w-80 object-cover md:h-80 sm:h-48 lg:h-96  h-28"
                 />
                 <p className="lg:text-lg md:text-md  text-sm font-bold mt-2 sm:mt-4 font-[Aclonica]">
                   Lehenga Choli

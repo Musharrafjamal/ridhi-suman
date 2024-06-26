@@ -78,9 +78,10 @@ function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link href={"/"} className="text-black flex gap-1">
+        <Link href={"/"} className="text-black flex gap-1 items-center relative">
           <img src="/icon-2/Cart.svg" alt="Cart" />
           Cart
+          <span class="absolute top-[-2px] left-[36px] inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-teal-600 rounded-full transform translate-x-1/2 -translate-y-1/2">1</span>
         </Link>
       </Typography>
       <Typography
@@ -127,7 +128,7 @@ function Nav() {
             >
               <span className="flex gap-1 items-center">
                 <IoMailOutline color="orange" fontSize={23} />{" "}
-                musharrafjamal92@gmail.com
+                ridhisuman@gmail.com
               </span>
             </a>
           </div>
@@ -167,26 +168,31 @@ function Nav() {
       </nav>
 
       <div className="max-h-[768px]">
-        <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
-          <div className="flex items-center justify-between text-blue-gray-900">
-            <Card className="mr-4 cursor-pointer font-extrabold py-1.5 lg:ml-2">
-              <div className="text-2xl font-semibold text-blue-500">Ridhi Suman Fabrics</div>
+        <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8 lg:py-1">
+          <div className="flex items-center justify-between  ">
+            <Card className=" shadow-none cursor-pointer   ">
+              <img
+                src="/ridhi-logo.png"
+                alt="logo"
+                className="block max-w-[180px] max-h-[165px]"
+              />
             </Card>
             <div className="flex items-center gap-4">
               <div className="mr-4 hidden lg:block">{navList}</div>
               <div className="flex items-center lg:hidden">
-                <div className="mr-4"><div
-          className="flex items-center gap-4 cursor-pointer"
-          onClick={() => setOpenProfile((prev) => !prev)}
-        >
-          <img
-            src="https://docs.material-tailwind.com/img/face-2.jpg"
-            alt="avatar"
-            className="inline-block relative object-cover object-center !rounded-full w-12 h-12"
-          />
-          <div>
-          </div>
-        </div></div>
+                <div className="mr-4">
+                  <div
+                    className="flex items-center gap-4 cursor-pointer"
+                    onClick={() => setOpenProfile((prev) => !prev)}
+                  >
+                    <img
+                      src="https://docs.material-tailwind.com/img/face-2.jpg"
+                      alt="avatar"
+                      className="inline-block relative object-cover object-center !rounded-full w-12 h-12"
+                    />
+                    <div></div>
+                  </div>
+                </div>
                 <IconButton
                   variant="text"
                   className="ml-auto h-6 w-6 flex text-inherit text-black hover:bg-transparent focus:bg-transparent active:bg-transparent"
@@ -229,7 +235,7 @@ function Nav() {
           </div>
           <MobileNav open={openNav}>{navList}</MobileNav>
           {openProfile && (
-            <div className="flex flex-col dropDownProfile">
+            <div className="flex flex-col dropDownProfile z-50">
               <ul className="flex flex-col gap-4">
                 <li>
                   <Link href={"/"}>Profile</Link>
