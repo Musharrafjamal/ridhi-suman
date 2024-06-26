@@ -9,7 +9,7 @@ const products = [
     originalPrice: "₹2000.00",
     discountedPrice: "₹1000.00",
     sales: "120 Sold",
-    images: ["/category/download (1).jpg"], // 1 image
+    images: ["/category/download (1).jpg", "/category/download (2).jpg"], // 1 image
   },
   {
     id: 2,
